@@ -15,10 +15,9 @@ def postprocess(self, x: torch.Tensor):
         x (Tensor): Output Tensor to postprocess
     """
     output_transform = transforms.ToPILImage()
-    out = []
-    x = x.clamp_(0, 1).data.cpu()
-    for elem in x:
-        out.append(output_transform(elem))
+    x = x.clamp_(0, 1).data[0].cpu()
+
+    out = output_transform(x)
 
     return out
 
