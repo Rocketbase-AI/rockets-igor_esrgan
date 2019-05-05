@@ -1,0 +1,22 @@
+{
+    "builder": "igor",
+    "model": "esrgan",
+    "family": "image_superresolution",
+    "parent": null,
+    "dataset": "DF2K",
+    "isTrainable": false,
+    "isPrivate": false,
+    "blueprint": [
+        "__init__.py",
+        "architecture.py",
+        "config.json",
+        "info.json",
+        "README.md",
+        "rocket_builder.py",
+        "weights.pth"
+    ],
+    "rocketRepoUrl": "https://gitlab.com/mirage-technologies/rockets/esrgan",
+    "paperUrl": "https://arxiv.org/abs/1809.00219",
+    "originRepoUrl": "https://github.com/xinntao/ESRGAN",
+    "description": "Enhanced Super-Resolution Generative Adversarial Networks"
+}
